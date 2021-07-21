@@ -1,7 +1,7 @@
-# Личный проект «Пинк» 
+# Личный проект «Пинк»
 
-* Студент: [Hamlet Ghumashyan](https://up.htmlacademy.ru/adaptive/23/user/1712883).
-* Наставник: `Неизвестно`.
+- Студент: [Hamlet Ghumashyan](https://up.htmlacademy.ru/adaptive/23/user/1712883).
+- Наставник: [Алёна Сиприкова](https://htmlacademy.ru/profile/asiprikova).
 
 ---
 
