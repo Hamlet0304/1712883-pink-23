@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
 <body class="page__body">
-  <header class="page-header">
+  <div class="header__inner inner">
+  <header class="header">
+    <div>
     <a class="page-header__logo">
-      <img src=".//img/pink_logo.png" width="74" height="23" alt="логотип пинк">
+      <img src="https://www.explorejasper.com/wp-content/uploads/2019/03/placeholder-images.png" width="74" height="23" alt="Логотип Пинк">
     </a>
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a>
@@ -30,29 +32,38 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a href="https://htmlacademy.ru/study">
               HTML Academy
             </a>
           </li>
         </ul>
-      </div>
     </nav>
+  </div>
   </header>
 
   <main class="page-main">
     <section class="app">
-      <div class="app__wrapper">
-        <P class="app__slogan">Взгляните на жизнь иначе!</P>
-        <img src="https://via.placeholder.com/150x100" alt="">
+      <div class="app__inner inner">
+        <p class="app__slogan">Взгляните на жизнь иначе!</p>
+        <img src="https://via.placeholder.com/150x100" alt="Рука с приложением">
       </div>
       <div class="download">
-        <a download href="#">Скачать приложение</a>
-        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p>Скачать приложение</p>
+        <a download href="https://www.apple.com/ua/app-store/">
+          <img src="https://via.placeholder.com/150x100" width="47" height="56" alt="Логотип Эпл">
+        </a>
+        <a download href="https://play.google.com/store?gl=UA&utm_source=emea_Med&utm_medium=hasem&utm_content=Oct2020&utm_campaign=Evergreen&pcampaignid=MKT-EDR-emea-ua-1001280-Med-hasem-py-Evergreen-Oct2020-Text_Search_BKWS%7CONSEM_kwid_43700005658690477&gclid=Cj0KCQjw9O6HBhCrARIsADx5qCTE4X2qMAwu4CU4RvsQPuHO48ZAVdRn4PO9sH5fgvC5TsXjAijzL98aAv3REALw_wcB&gclsrc=aw.ds">
+          <img src="https://via.placeholder.com/150x100" width="47" height="56" alt="Логотип Андроид">
+        </a>
+        <a download href="https://www.microsoft.com/uk-ua/store/apps/windows">
+          <img src="https://via.placeholder.com/150x100" width="47" height="56" alt="Логотип">
+        </a>
       </div>
+      <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
 
-    <section class="advantages">
-      <div class="advantages__wrapper">
+    <section class="advantages ">
+      <div class="advantages__inner inner">
         <p>Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
         <ul class="advantages__list">
           <li>
@@ -71,13 +82,11 @@
               новых</p>
           </li>
         </ul>
-        <img src="https://via.placeholder.com/150x100" alt="">
       </div>
     </section>
 
     <section class="reviews">
-      <div class="reviews__wrapper slider">
-        <h2 class="reviews__title">,,</h2>
+      <div class="reviews____inner inner slider">
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
@@ -118,36 +127,42 @@
     </section>
 
     <section class="price">
-      <div class="stats__wrapper">
+      <div class="stats____inner inner">
         <table>
+          <tbody>
           <thead>
-            <td>
+            <tr>
+            <th></th>
             <th>База 1,99 USD</th>
             <th>Стандарт 3,99 USD</th>
             <th>Анлим 9,99 USD</th>
-            </td>
+            </tr>
           </thead>
           <tr>
-            <td>
-              Розовый фильтр
-            </td>
+            <td>Розовый фильтр</td>
+            <td>галочка</td>
+            <td>галочка</td>
+            <td>галочка</td>
           </tr>
           <tr>
-            <td>
-              Смайлики
-            </td>
+            <td>Смайлики</td>
+            <td>крестик</td>
+            <td>галочка</td>
+            <td>галочка</td>
           </tr>
           <tr>
-            <td>
-              Комментарии
-            </td>
+            <td>Комментарии</td>
+            <td>крестик</td>
+            <td>крестик</td>
+            <td>галочка</td>
           </tr>
+          </tbody>
         </table>
       </div>
     </section>
 
     <section class="connection">
-      <div>
+      <div class="connection__inner inner">
         <p>Остались вопросы? Свяжитесь с нами!</p>
       </div>
       <div class="contact-us">
@@ -167,7 +182,9 @@
     <div>ТУТ БУДЕТ КАРТА</div>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="footer__inner inner">
+        <img src="https://www.explorejasper.com/wp-content/uploads/2019/03/placeholder-images.png" width="74" height="23"
+          alt="Логотип Пинк">
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -181,6 +198,11 @@
             </li>
           </ul>
         </div>
+        <a href="https://htmlacademy.ru/study">
+          Разработано
+          <img src="https://www.explorejasper.com/wp-content/uploads/2019/03/placeholder-images.png" width="74" height="23"" alt="
+            Логотип Академии">
+        </a>
       </div>
     </footer>
 
