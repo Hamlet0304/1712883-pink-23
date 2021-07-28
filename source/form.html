@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
 <body>
   <div class="header__inner inner">
-    <header class="header">
+    <header class="header__logo-wraper">
       <div>
         <a class="page-header__logo">
           <img src="https://www.explorejasper.com/wp-content/uploads/2019/03/placeholder-images.png" width="74"
@@ -17,22 +17,22 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a class="site-list__link" href="photo.html">
               Фотографии
             </a>
           </li>
           <li class="site-list__item">
-            <a>
+            <a class="site-list__link">
               Конкурс
             </a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/study">
+            <a class="site-list__link" href="https://htmlacademy.ru/study">
               HTML Academy
             </a>
           </li>
@@ -42,31 +42,31 @@
 
 <main>
 
-<div>
-  <p>Конкурс на самое безбашенное путешествие с Пинк</p>
-</div>
+<section class="app">
+  <div class="app__inner inner"  >
+    <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </div>
+</section>
 
 <section>
-  <div>
-    <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-  </div>
-
-<div>
+  <fieldset>
+    <legend>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</legend>
   <form>
       <p>
-        <label for="last-name">Фамилия:</label>
-        <input type="text" id="last-name" placeholder="Укажите фамилию *">
+        <label for="last-name">Фамилия</label>
+        <input required type="text" id="last-name" placeholder="Укажите фамилию *">
       </p>
 
       <p>
-        <label for="first-name">Фамилия:</label>
-        <input type="text" id="first-name" placeholder="Введите ваше имя *">
+        <label for="first-name">Имя:</label>
+        <input required type="text" id="first-name" placeholder="Введите ваше имя *">
       </p>
 
       <p>
         <label for="patronymic">Отчество:</label>
         <input type="text" id="patronymic" placeholder="Ну и отчество тоже">
       </p>
+  </fieldset>
 
     <fieldset>
       <legend>Ваши безбашенные достижения в путешествии</legend>
@@ -98,45 +98,50 @@
         </ul>
     </fieldset>
 
+    <fieldset>
     <p>
       <label for="last-name">Номер телефона</label>
-      <input type="text" id="last-name" placeholder="Номер, пожалуйста">
+      <input type="tel" id="last-name" placeholder="Номер, пожалуйста">
     </p>
 
     <p>
       <label for="first-name">Адрес почты</label>
-      <input type="text" id="first-name" placeholder="Введите почту *">
+      <input required type="email" id="first-name" placeholder="Введите почту *">
     </p>
+    </fieldset>
 
     <fieldset>
       <legend>С каким приложением путешествовали?</legend>
         <ul>
           <li>
-            <input type="checkbox" id="iOS" name="app" checked>
-            <label for="selfie">Pink для iOS</label>
+            <input type="radio" id="iOS" name="app" checked>
+            <label for="app">Pink для iOS</label>
           </li>
           <li>
-            <input type="checkbox" id="Android" name="app">
-            <label for="chack">Pink на Android</label>
+            <input type="radio" id="Android" name="app">
+            <label for="app">Pink на Android</label>
           </li>
           <li>
-            <input type="checkbox" id="Windows" name="app">
-            <label for="tower">Windows Phone</label>
+            <input type="radio" id="Windows" name="app">
+            <label for="app">Windows Phone</label>
           </li>
         </ul>
     </fieldset>
 
-    <div>
-      <p>Опишите свои эмоции</p>
+    <fieldset>
+      <div>
+      <label for="textarea">Опишите свои эмоции</label>
       <textarea>Можно прям в красках, не стесняясь в выражениях</textarea>
-    </div>
+      </div>
 
     <button class="send" type="submit" >Отправить форму</button>
+    <p>* — обязательные поля</p>
+    </fieldset>
   </form>
 
-    <p>* — обязательные поля</p>
 
- </div>
+
+
 </section>
 
 </main>
