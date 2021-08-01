@@ -3,35 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-<body class="page__body">
-  <div class="header__inner inner">
+<body>
   <header class="header">
-    <div>
-    <a class="page-header__logo">
+    <div class="header__inner inner">
+    <a class="header__logo">
       <img src="https://www.explorejasper.com/wp-content/uploads/2019/03/placeholder-images.png" width="74" height="23" alt="Логотип Пинк">
     </a>
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
-    <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a>
+    <nav class="header__main-nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="photo.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">
               Фотографии
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
               Конкурс
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/study">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/study">
               HTML Academy
             </a>
           </li>
@@ -40,14 +40,14 @@
   </div>
   </header>
 
-  <main class="page-main">
+  <main class="main">
     <section class="app">
       <div class="app__inner inner">
         <p class="app__slogan">Взгляните на жизнь иначе!</p>
-        <img src="https://via.placeholder.com/150x100" alt="Рука с приложением">
+        <img class="app__image" src="https://via.placeholder.com/150x100" alt="Рука с приложением">
       </div>
-      <div class="download">
-        <p>Скачать приложение</p>
+      <div class="app__download download">
+        <p class="download__text">Скачать приложение</p>
         <a download href="https://www.apple.com/ua/app-store/">
           <img src="https://via.placeholder.com/150x100" width="47" height="56" alt="Логотип Эпл">
         </a>
