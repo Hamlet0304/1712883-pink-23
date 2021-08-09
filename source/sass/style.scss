@@ -1,3 +1,14 @@
 @import "fonts.scss";
-@import "varables.scss";
+@import "variables.scss";
 @import "base.scss";
+@import "./blocks/header.scss";
+@import "./blocks/app.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/price.scss";
+@import "./blocks/connection.scss";
+@import "./blocks/competition.scss";
+@import "./blocks/information.scss";
+@import "./blocks/mistake.scss";
+@import "./blocks/submission-completed.scss";
+@import "./blocks/footer.scss";

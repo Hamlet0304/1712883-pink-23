@@ -1,0 +1,20 @@
+.mistake {
+  margin: 0;
+  padding: 0;
+}
+
+.mistake-info {
+  font-size: $font-size-l;
+  font-weight: bold;
+}
+
+.mistake-desc {
+  font-size: $font-size-s;
+}
+
+.mistake-button {
+  font-size: $font-size-l;
+  font-weight: bold;
+  color: $white;
+  background-color: $green;
+}

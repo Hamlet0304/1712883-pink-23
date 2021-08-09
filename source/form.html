@@ -3,96 +3,88 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 <body>
-  <div class="header__inner inner">
-    <header class="header">
-      <div class="header__logo-wraper">
-        <a class="page-header__logo">
-          <img src="https://www.explorejasper.com/wp-content/uploads/2019/03/placeholder-images.png" width="74"
-            height="23" alt="Логотип Пинк">
-        </a>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link">
-              Конкурс
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/study">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </nav>
-  </div>
+  <header class="header">
+    <div class="header__inner inner">
+    <a class="header__logo">
+      <img src="https://www.explorejasper.com/wp-content/uploads/2019/03/placeholder-images.png" width="74" height="23" alt="Логотип Пинк">
+    </a>
+    <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    </div>
+    <nav class="header__main-nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru/study">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+</header>
 
 <main>
 
-<section class="app">
-  <div class="app__inner inner"  >
-    <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+<section class="competition">
+  <div class="competition__inner inner">
+    <h1 class="competition-slogan">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </div>
 </section>
 
-<section>
+<section class="information">
 
-    <legend>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</legend>
-  <form>
+    <p class="information-desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+  <form class="form">
     <fieldset>
+      <legend class="visually-hidden">Личные данные</legend>
       <p>
-        <label for="last-name">Фамилия</label>
-        <input required type="text" id="last-name" placeholder="Укажите фамилию *">
+        <label class="information-title" for="last-name">Фамилия</label>
+        <input class="information-member" required type="text" id="last-name" placeholder="Укажите фамилию *">
       </p>
 
       <p>
-        <label for="first-name">Имя:</label>
-        <input required type="text" id="first-name" placeholder="Введите ваше имя *">
+        <label class="information-title" for="first-name">Имя:</label>
+        <input class="information-member" required type="text" id="first-name" placeholder="Введите ваше имя *">
       </p>
 
       <p>
-        <label for="patronymic">Отчество:</label>
-        <input type="text" id="patronymic" placeholder="Ну и отчество тоже">
+        <label class="information-title" for="patronymic">Отчество:</label>
+        <input class="information-member" type="text" id="patronymic" placeholder="Ну и отчество тоже">
       </p>
-  </fieldset>
+    </fieldset>
 
     <fieldset>
-      <legend>Ваши безбашенные достижения в путешествии</legend>
+      <legend class="information-subtitle">Ваши безбашенные достижения в путешествии</legend>
         <ul>
-          <li class="achievement__item">
+          <li class="information-achievement ">
             <input type="checkbox" id="selfie" name="achievement" checked>
             <label for="selfie">Сделал селфи с акулой</label>
           </li>
-          <li class="achievement__item">
+          <li class="information-achievement ">
             <input type="checkbox" id="chack" name="achievement">
             <label for="chack">Видел Чака Норриса</label>
           </li>
-          <li class="achievement__item">
+          <li class="information-achievement ">
             <input type="checkbox" id="tower" name="achievement" checked>
             <label for="tower">Удержал башню</label>
           </li>
-          <li class="achievement__item">
+          <li class="information-achievement ">
             <input type="checkbox" id="beach" name="achievement" checked>
             <label for="beach">Обгорел на пляже</label>
           </li>
-          <li class="achievement__item">
+          <li class="information-achievement ">
             <input type="checkbox" id="gifts" name="achievement">
             <label for="gifts">Накупил сувениров</label>
           </li>
-          <li class="achievement__item">
+          <li class="information-achievement ">
             <input type="checkbox" id="hotel" name="achievement">
             <label for="hotel">Разгромил отель</label>
           </li>
@@ -100,37 +92,38 @@
     </fieldset>
 
     <fieldset>
-    <p>
-      <label for="last-name">Номер телефона</label>
-      <input type="tel" id="last-name" placeholder="Номер, пожалуйста">
-    </p>
-
-    <p>
-      <label for="first-name">Адрес почты</label>
-      <input required type="email" id="first-name" placeholder="Введите почту *">
-    </p>
+      <legend class="visually-hidden">Личные данные</legend>
+        <p>
+        <label class="information-title" for="last-name">Номер телефона</label>
+        <input class="information-member" type="tel" id="last-name" placeholder="Номер, пожалуйста">
+        </p>
+        <p>
+        <label class="information-title" for="first-name">Адрес почты</label>
+        <input class="information-member" required type="email" id="first-name" placeholder="Введите почту *">
+        </p>
     </fieldset>
 
     <fieldset>
-      <legend>С каким приложением путешествовали?</legend>
+      <legend class="information-subtitle">С каким приложением путешествовали?</legend>
         <ul>
           <li>
             <input type="radio" id="iOS" name="app" checked>
-            <label for="app">Pink для iOS</label>
+            <label class="information-device" for="app">Pink для iOS</label>
           </li>
           <li>
             <input type="radio" id="Android" name="app">
-            <label for="app">Pink на Android</label>
+            <label class="information-device" for="app">Pink на Android</label>
           </li>
           <li>
             <input type="radio" id="Windows" name="app">
-            <label for="app">Windows Phone</label>
+            <label class="information-device" for="app">Windows Phone</label>
           </li>
         </ul>
     </fieldset>
 
     <fieldset>
-      <div>
+      <legend class="visually-hidden">Эмоции</legend>
+      <div  class="information-subtitle">
       <label for="textarea">Опишите свои эмоции</label>
       <textarea>Можно прям в красках, не стесняясь в выражениях</textarea>
       </div>
@@ -140,27 +133,42 @@
     </fieldset>
   </form>
 
-
-
-
 </section>
 
 </main>
 
-    <footer class="page-footer">
+    <footer class="footer">
       <div class="footer__inner inner">
         <img src="https://www.explorejasper.com/wp-content/uploads/2019/03/placeholder-images.png" width="74" height="23"
           alt="Логотип Пинк">
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/?lang=ru">Твиттер</a>
+              <a class="social__link social__link-twitter" href="https://twitter.com/?lang=ru"><svg width="54" height="54"
+                  viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3" />
+                  <path
+                    d="M29.5641 20.1689C30.2458 19.9538 30.9837 19.9439 31.6719 20.1405C32.3602 20.3371 32.9633 20.7301 33.3947 21.2632C34.1053 21.0538 34.8055 20.816 35.5263 20.6066C35.5164 20.9258 35.4299 21.2391 35.2732 21.5237C35.1165 21.8084 34.8935 22.0574 34.6201 22.2528C34.8726 22.2788 35.1281 22.2511 35.3673 22.172C35.6064 22.0928 35.8228 21.9642 36 21.7961C35.901 22.2099 35.6999 22.597 35.4123 22.9271C35.1247 23.2572 34.7585 23.5214 34.3421 23.6992C34.095 29.9699 30.9748 34.1662 23.6533 33.9949H23.1487C22.7059 33.9949 18.7311 33.5667 18 32.2441C19.752 32.4899 21.5389 32.0976 22.984 31.1498C21.9542 30.8643 20.1316 30.7026 19.8227 28.4093C20.2108 28.5434 20.6321 28.5731 21.0378 28.495C19.7609 27.7052 18.3398 27.0391 18.4222 24.9933C18.8196 25.2988 19.3269 25.4551 19.8432 25.431C19.1018 25.2026 17.7529 22.3099 18.8959 20.8255C20.8215 22.5478 22.8604 24.1749 26.4851 24.3367C26.7117 22.2052 27.6899 20.7779 29.5641 20.1689Z"
+                    fill="#D22856" />
+                </svg></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://uk-ua.facebook.com/">Фейсбук</a>
+              <a class="social__link social__link-facebook" href="https://uk-ua.facebook.com/"><svg width="54" height="54"
+                  viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3" />
+                  <path
+                    d="M29.5087 21.1932H32V18H29.0208C25.7612 18.1711 24.5986 20.2714 25.0761 23.8163H23V27.1521H25.0761V36H29.0208V27.1521H31.9792V23.8163H29.0104C28.9896 22.8184 28.9689 21.5259 29.5087 21.1932Z"
+                    fill="#D22856" />
+                </svg></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/">Ютуб</a>
+              <a class="social__link social__link-youtube" href="https://www.youtube.com/"><svg width="54" height="54"
+                  viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3" />
+                  <path
+                    d="M23.8336 33.8089C23.6463 33.9278 23.4247 33.9941 23.1963 33.9996C22.9678 34.0051 22.7426 33.9495 22.5487 33.8398C22.3548 33.7301 22.2007 33.571 22.1056 33.3824C22.0106 33.1938 21.9787 32.984 22.014 32.779V22.221C21.9787 22.016 22.0106 21.8062 22.1056 21.6176C22.2007 21.429 22.3548 21.2699 22.5487 21.1602C22.7426 21.0505 22.9678 20.9949 23.1963 21.0004C23.4247 21.0059 23.6463 21.0722 23.8336 21.1911L36.2333 26.6928C37.2556 27.1382 37.2556 27.8618 36.2333 28.3072L23.8336 33.8089Z"
+                    fill="#D22856" />
+                </svg></a>
             </li>
           </ul>
         </div>
@@ -174,17 +182,17 @@
 
     <section class="mistake">
       <div>
-          <p>Что-то пошло не так!</p>
-          <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="close" type="reset">ОК</button>
+          <p class="mistake-info">Что-то пошло не так!</p>
+          <p class="mistake-desc">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="mistake-button" class="close" type="reset">ОК</button>
       </div>
     </section>
 
     <section class="submission-completed">
       <div>
-        <p>Ваша заявка отправлена</p>
-        <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-        <button class="close" type="submit">Закрыть окно</button>
+        <p class="submission-completed-info">Ваша заявка отправлена</p>
+        <p class="submission-completed-desc">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <button class="submission-completed-button" class="close" type="submit">Закрыть окно</button>
       </div>
     </section>
 
