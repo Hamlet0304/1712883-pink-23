@@ -5,8 +5,15 @@
 
 .reviews__text {
   font-size: $font-size-s;
+  line-height: $line-height-xl;
 }
 
 .reviews__author-name {
   font-size: $font-size-l;
+  line-height: $line-height-xl;
+}
+
+.reviews__author-work {
+  font-size: $font-size-l;
+  line-height: $line-height-xl;
 }

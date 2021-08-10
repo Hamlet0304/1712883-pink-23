@@ -5,12 +5,19 @@
 
 .app__slogan {
   font-size: $font-size-xl;
+  line-height: 120%;
 }
 
 .app__download {
   font-size: $font-size-l;
 }
 
-.app-availability {
+.app__availability {
   font-size: $font-size-s;
+  line-height: $line-height-m;
+}
+
+.app__download__text {
+  font-size: $font-size-l;
+  line-height: $line-height-s;
 }

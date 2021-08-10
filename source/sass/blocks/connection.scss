@@ -3,39 +3,42 @@
   padding: 0;
 }
 
-.connection-with-us {
+.connection__with__us {
   font-size: $font-size-xl;
 }
 
-.connection-call {
-  line-height: 25px;
+.connection__call {
+  line-height: $line-height-l;
   font-size: $font-size-l;
   font-weight: bold;
 }
 
-.connection-write {
-  line-height: 25px;
+.connection__write {
+  line-height: $line-height-l;
   font-size: $font-size-l;
   font-weight: bold;
 }
 
-.connection-us {
-  line-height: 25px;
+.connection__us {
+  line-height: $line-height-l;
   font-size: $font-size-l;
   font-weight: bold;
 }
 
-.connection-number {
+.connection__number {
   font-size: $font-size-xl;
   color: $pink;
+  line-height: $line-height-xxxl;
 }
 
-.connection-email {
+.connection__email {
   font-size: $font-size-xl;
   color: $pink;
+  line-height: $line-height-xxxl;
 }
 
-.connection-address {
+.connection__address {
   font-size: $font-size-xl;
   color: $pink;
+  line-height: $line-height-xxxl;
 }

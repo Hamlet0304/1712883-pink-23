@@ -3,14 +3,16 @@
   padding: 0;
 }
 
-.advantages-slogan {
+.advantages__slogan {
   font-size: $font-size-xl;
 }
 
 .advantages__title {
   font-size: $font-size-l;
+  line-height: $line-height-m;
 }
 
 .advantages__description {
   font-size: $font-size-s;
+  line-height: $line-height-m;
 }

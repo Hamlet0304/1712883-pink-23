@@ -3,18 +3,21 @@
   padding: 0;
 }
 
-.mistake-info {
+.mistake__info {
   font-size: $font-size-l;
   font-weight: bold;
+  line-height: $line-height-m;
 }
 
-.mistake-desc {
+.mistake__desc {
   font-size: $font-size-s;
+  line-height: $line-height-m;
 }
 
-.mistake-button {
+.mistake__button {
   font-size: $font-size-l;
   font-weight: bold;
   color: $white;
   background-color: $green;
+  line-height: $line-height-xl;
 }

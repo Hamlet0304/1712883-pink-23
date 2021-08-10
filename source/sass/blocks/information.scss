@@ -3,28 +3,7 @@
   padding: 0;
 }
 
-.information-desc {
+.information__desc {
   font-size: $font-size-s;
-}
-
-.information-title {
-  font-size: $font-size-s;
-  color: $pink;
-}
-
-.information-member {
-  font-size: $font-size-l;
-}
-
-.information-subtitle {
-  font-size: $font-size-s;
-  color: $pink;
-}
-
-.information-achievement {
-  font-size: $font-size-l;
-}
-
-.information-device {
-  font-size: $font-size-l;
+  line-height: $line-height-xl;
 }

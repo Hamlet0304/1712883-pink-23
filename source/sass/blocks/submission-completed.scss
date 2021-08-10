@@ -3,18 +3,21 @@
   padding: 0;
 }
 
-.submission-completed-info {
+.submission__completed__info {
   font-size: $font-size-l;
   font-weight: bold;
+  line-height: $line-height-m;
 }
 
-.submission-completed-desc {
+.submission__completed__desc {
   font-size: $font-size-s;
+  line-height: $line-height-m;
 }
 
-.submission-completed-button {
+.submission__completed__button {
   font-size: $font-size-l;
   font-weight: bold;
   color: $white;
   background-color: $green;
+  line-height: $line-height-xl;
 }
