@@ -1,0 +1,21 @@
+.submission-completed {
+  margin: 0;
+  padding: 0;
+}
+
+.submission__completed__info {
+  font-size: $font-size-l;
+  font-weight: bold;
+}
+
+.submission__completed__desc {
+  font-size: $font-size-s;
+}
+
+.submission__completed__button {
+  font-size: $font-size-l;
+  font-weight: bold;
+  color: $white;
+  background-color: $green;
+  line-height: $line-height-xl;
+}
