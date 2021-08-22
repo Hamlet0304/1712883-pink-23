@@ -2,4 +2,12 @@
   font-size: $font-size-l;
   margin: 0;
   padding: 0;
+  background-color: $black;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-width {
+    color: rgb(32, 224, 224);
+  }
 }

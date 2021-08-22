@@ -1,0 +1,17 @@
+@mixin mobile-width {
+  @media (min-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin tablet-width {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop-width {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}

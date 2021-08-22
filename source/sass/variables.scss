@@ -7,6 +7,7 @@ $green: #2aab6d;
 $text-color: $black;
 $text-color-accent: $pink;
 $font-main: "Open Sans", "Arial", sans-serif;
+$font-size-xs: 12px;
 $font-size-s: 14px;
 $font-size-m: 16px;
 $font-size-l: 18px;
@@ -17,3 +18,8 @@ $line-height-l: 25px;
 $line-height-xl: 30px;
 $line-height-xxl: 32px;
 $line-height-xxxl: 33px;
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width: 320px;

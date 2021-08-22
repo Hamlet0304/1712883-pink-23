@@ -1,5 +1,6 @@
 @import "fonts.scss";
 @import "variables.scss";
+@import "./mixins.scss";
 @import "base.scss";
 @import "./blocks/header.scss";
 @import "./blocks/app.scss";
@@ -12,4 +13,7 @@
 @import "./blocks/mistake.scss";
 @import "./blocks/submission-completed.scss";
 @import "./blocks/form.scss";
+@import "./blocks/card.scss";
+@import "./blocks/editing.scss";
+@import "./blocks/wrapper.scss";
 @import "./blocks/footer.scss";
