@@ -1,0 +1,14 @@
+.main__nav__list {
+  list-style: none;
+  color: $white;
+
+  @include desktop-width {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.main__nav__link {
+  color: $white;
+  margin: 10px;
+}

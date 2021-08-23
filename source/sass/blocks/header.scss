@@ -8,6 +8,12 @@
   flex-direction: column;
 
   @include tablet-width {
-    color: rgb(32, 224, 224);
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include desktop-width {
+    display: flex;
+    flex-direction: row;
   }
 }

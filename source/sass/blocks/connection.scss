@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.connection__with__us {
+.connection__question {
   font-size: $font-size-xl;
   line-height: $line-height-xl;
 }
@@ -20,7 +20,7 @@
   font-weight: bold;
 }
 
-.connection__us {
+.connection__with__us {
   line-height: $line-height-l;
   font-size: $font-size-l;
   font-weight: bold;
@@ -42,4 +42,16 @@
   font-size: $font-size-xl;
   color: $pink;
   line-height: $line-height-xxxl;
+}
+
+.connection__text {
+  @include tablet-width {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include desktop-width {
+    display: flex;
+    flex-direction: row;
+  }
 }
