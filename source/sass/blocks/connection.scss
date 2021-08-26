@@ -9,6 +9,7 @@
 
   @include desktop-width {
     display: grid;
+    grid-template-areas: 1fr 1fr 1fr;
     justify-content: center;
     justify-items: center;
   }
@@ -79,6 +80,7 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
 
   @include tablet-width {
     margin: 0;
