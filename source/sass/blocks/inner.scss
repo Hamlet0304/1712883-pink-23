@@ -1,0 +1,18 @@
+.inner {
+  padding: 0;
+
+  @include mobile-width {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  @include tablet-width {
+    width: 760px;
+    margin: 0 auto;
+  }
+
+  @include desktop-width {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

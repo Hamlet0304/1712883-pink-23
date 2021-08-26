@@ -6,24 +6,24 @@
 .card__name {
   font-size: $font-size-s;
   line-height: $line-height-m;
-  font-weight: bold;
+  font-weight: $font-bold;
 }
 
 .card__posted {
   font-size: $font-size-xs;
   line-height: $line-height-m;
-  font-weight: 300;
+  font-weight: $font-normal;
 }
 
 .card__description {
   font-size: $font-size-s;
   line-height: $line-height-m;
-  font-weight: normal;
+  font-weight: $font-medium;
 }
 
 .card__liked {
   font-size: $font-size-xs;
   line-height: $line-height-m;
-  font-weight: normal;
+  font-weight: $font-medium;
   color: $pink;
 }
