@@ -2,3 +2,15 @@
   margin: 0;
   padding: 0;
 }
+
+.footer__inner {
+  @include tablet-width {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include desktop-width {
+    display: flex;
+    flex-direction: row;
+  }
+}
