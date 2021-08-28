@@ -4,8 +4,11 @@
   padding: 0;
   background-color: $black;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
+
+  @include mobile-width {
+    display: flex;
+    flex-direction: column;
+  }
 
   @include tablet-width {
     display: flex;

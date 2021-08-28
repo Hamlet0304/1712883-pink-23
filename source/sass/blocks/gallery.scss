@@ -1,0 +1,29 @@
+.gallery {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery__examples__photos {
+  text-align: center;
+}
+
+.gallery__list {
+  margin: 0;
+  padding: 0;
+
+  @include tablet-width {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  @include desktop-width {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+  }
+}
