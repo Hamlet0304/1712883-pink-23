@@ -24,12 +24,12 @@
   line-height: $line-height-xl;
 }
 
-.form__achievement__info {
+.form__achievement_info {
   font-size: $font-size-l;
   line-height: $line-height-xl;
 }
 
-.form__list__achievements {
+.form__list_achievements {
   list-style: none;
 
   @include desktop-width {
