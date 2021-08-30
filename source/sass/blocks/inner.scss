@@ -8,12 +8,14 @@
   }
 
   @include tablet-width {
-    width: 760px;
+    width: 660px;
     margin: 0 auto;
+    padding: 0 20px 0 20px;
   }
 
   @include desktop-width {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 132px 0 132px;
   }
 }

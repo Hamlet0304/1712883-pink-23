@@ -27,23 +27,24 @@
       </svg>
       </a>
     <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    </div>
+
     <nav class="header__main-nav main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">Главная</a>
+      <ul class="main__nav-list">
+        <li class="main__nav-item">
+          <a class="main__nav-link" href="index.html">Главная</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Фотографии</a>
+        <li class="main__nav-item">
+          <a class="main__nav-link" href="catalog.html">Фотографии</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link">Конкурс</a>
+        <li class="main__nav-item">
+          <a class="main__nav-link">Конкурс</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru/study">HTML Academy</a>
+        <li class="main__nav-item">
+          <a class="main__nav-link" href="https://htmlacademy.ru/study">HTML Academy</a>
         </li>
       </ul>
     </nav>
+  </div>
 </header>
 
 <main>
@@ -55,7 +56,7 @@
 </section>
 
 <section class="information">
-
+  <div class="inner">
     <p class="information__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
   <form class="form">
     <fieldset>
@@ -78,30 +79,30 @@
 
     <fieldset>
       <legend class="form__subtitle">Ваши безбашенные достижения в путешествии</legend>
-        <ul>
+        <ul class="form__list_achievements">
           <li class="form__achievement ">
             <input type="checkbox" id="selfie" name="achievement" checked>
-            <label class="form__achievement__info" for="selfie">Сделал селфи с акулой</label>
-          </li>
-          <li class="form__achievement ">
-            <input type="checkbox" id="chack" name="achievement">
-            <label class="form__achievement__info" for="chack">Видел Чака Норриса</label>
-          </li>
-          <li class="form__achievement ">
-            <input type="checkbox" id="tower" name="achievement" checked>
-            <label class="form__achievement__info" for="tower">Удержал башню</label>
+            <label class="form__achievement_info" for="selfie">Сделал селфи с акулой</label>
           </li>
           <li class="form__achievement">
             <input type="checkbox" id="beach" name="achievement" checked>
-            <label class="form__achievement__info" for="beach">Обгорел на пляже</label>
+            <label class="form__achievement_info" for="beach">Обгорел на пляже</label>
+          </li>
+          <li class="form__achievement ">
+            <input type="checkbox" id="chack" name="achievement">
+            <label class="form__achievement_info" for="chack">Видел Чака Норриса</label>
           </li>
           <li class="form__achievement">
             <input type="checkbox" id="gifts" name="achievement">
-            <label class="form__achievement__info" for="gifts">Накупил сувениров</label>
+            <label class="form__achievement_info" for="gifts">Накупил сувениров</label>
+          </li>
+          <li class="form__achievement ">
+            <input type="checkbox" id="tower" name="achievement" checked>
+            <label class="form__achievement_info" for="tower">Удержал башню</label>
           </li>
           <li class="form__achievement">
             <input type="checkbox" id="hotel" name="achievement">
-            <label class="form__achievement__info" for="hotel">Разгромил отель</label>
+            <label class="form__achievement_info" for="hotel">Разгромил отель</label>
           </li>
         </ul>
     </fieldset>
@@ -147,7 +148,7 @@
     <p>* — обязательные поля</p>
     </fieldset>
   </form>
-
+  </div>
 </section>
 
 </main>
@@ -196,6 +197,7 @@
     </footer>
 
     <section class="mistake">
+      <div class="inner">
       <div>
           <p class="mistake__info">Что-то пошло не так!</p>
           <p class="mistake__desc">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -204,11 +206,12 @@
     </section>
 
     <section class="submission__completed">
-      <div>
-        <p class="submission__completed__info">Ваша заявка отправлена</p>
-        <p class="submission__completed__desc">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-        <button class="submission__completed__button" class="close" type="submit">Закрыть окно</button>
+      <div class="inner">
+        <p class="submission__completed_info">Ваша заявка отправлена</p>
+        <p class="submission__completed_desc">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <button class="submission__completed_button" class="close" type="submit">Закрыть окно</button>
       </div>
+
     </section>
 
 

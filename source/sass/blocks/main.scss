@@ -1,6 +1,11 @@
-.main__nav__list {
+.main__nav-list {
   list-style: none;
   color: $white;
+
+  @include tablet-width {
+    display: flex;
+    flex-direction: column;
+  }
 
   @include desktop-width {
     display: flex;
@@ -8,7 +13,7 @@
   }
 }
 
-.main__nav__link {
+.main__nav-link {
   color: $white;
   margin: 10px;
 }

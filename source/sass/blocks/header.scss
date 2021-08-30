@@ -4,13 +4,26 @@
   padding: 0;
   background-color: $black;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
+
+  @include mobile-width {
+    display: flex;
+    flex-direction: column;
+  }
 
   @include tablet-width {
     display: flex;
     flex-direction: column;
   }
+
+  @include desktop-width {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.header__inner {
+  margin: 0;
 
   @include desktop-width {
     display: flex;

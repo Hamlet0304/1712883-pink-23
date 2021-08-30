@@ -4,13 +4,31 @@
 }
 
 .footer__inner {
+  margin: 0;
+
+  @include mobile-width {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @include tablet-width {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   @include desktop-width {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
