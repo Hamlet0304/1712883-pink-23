@@ -1,0 +1,44 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  @include mobile-width {
+    margin: 0;
+    padding: 0;
+  }
+
+  @include tablet-width {
+    margin: 0;
+    padding: 0;
+  }
+
+  @include desktop-width {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.social__item {
+  margin: 0;
+  padding: 0;
+
+  @include mobile-width {
+    margin: 0;
+    padding: 0;
+  }
+
+  @include tablet-width {
+    margin: 0;
+    padding: 0;
+  }
+
+  @include desktop-width {
+    margin: 0;
+    padding: 0;
+  }
+}
