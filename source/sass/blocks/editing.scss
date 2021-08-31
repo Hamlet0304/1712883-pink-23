@@ -1,0 +1,22 @@
+.editing {
+  margin: 0;
+  padding: 0;
+}
+
+.editing__slogan {
+  font-size: $font-size-s;
+  line-height: $line-height-xl;
+  text-align: center;
+}
+
+.editing__tools {
+  margin: 0;
+
+  @include tablet-width {
+    margin: 0;
+  }
+
+  @include desktop-width {
+    margin: 0;
+  }
+}

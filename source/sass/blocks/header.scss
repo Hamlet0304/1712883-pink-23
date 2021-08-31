@@ -1,0 +1,33 @@
+.header {
+  font-size: $font-size-l;
+  margin: 0;
+  padding: 0;
+  background-color: $black;
+  color: #ffffff;
+
+  @include mobile-width {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include tablet-width {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include desktop-width {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.header__inner {
+  margin: 0;
+
+  @include desktop-width {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

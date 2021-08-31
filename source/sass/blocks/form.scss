@@ -1,0 +1,42 @@
+.form__title {
+  font-size: $font-size-s;
+  color: $pink;
+  line-height: $line-height-xl;
+}
+
+.form__member {
+  font-size: $font-size-l;
+  line-height: $line-height-xl;
+}
+
+.form__subtitle {
+  font-size: $font-size-s;
+  color: $pink;
+  line-height: $line-height-s;
+}
+
+.form__achievement {
+  font-size: $font-size-l;
+}
+
+.form__device {
+  font-size: $font-size-l;
+  line-height: $line-height-xl;
+}
+
+.form__achievement_info {
+  font-size: $font-size-l;
+  line-height: $line-height-xl;
+}
+
+.form__list_achievements {
+  list-style: none;
+
+  @include desktop-width {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

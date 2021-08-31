@@ -1,0 +1,29 @@
+.card {
+  margin: 0;
+  padding: 0;
+}
+
+.card__name {
+  font-size: $font-size-s;
+  line-height: $line-height-m;
+  font-weight: $font-bold;
+}
+
+.card__posted {
+  font-size: $font-size-xs;
+  line-height: $line-height-m;
+  font-weight: $font-normal;
+}
+
+.card__description {
+  font-size: $font-size-s;
+  line-height: $line-height-m;
+  font-weight: $font-medium;
+}
+
+.card__liked {
+  font-size: $font-size-xs;
+  line-height: $line-height-m;
+  font-weight: $font-medium;
+  color: $pink;
+}

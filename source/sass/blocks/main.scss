@@ -1,0 +1,19 @@
+.main__nav-list {
+  list-style: none;
+  color: $white;
+
+  @include tablet-width {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include desktop-width {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.main__nav-link {
+  color: $white;
+  margin: 10px;
+}

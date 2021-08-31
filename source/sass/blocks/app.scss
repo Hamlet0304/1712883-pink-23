@@ -1,0 +1,32 @@
+.app {
+  margin: 0;
+  padding: 0;
+
+  @include tablet-width {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include desktop-width {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.app__slogan {
+  font-size: $font-size-xl;
+  line-height: $line-height-xl;
+}
+
+.app__download {
+  font-size: $font-size-l;
+}
+
+.app__availability {
+  font-size: $font-size-s;
+}
+
+.app__download__text {
+  font-size: $font-size-l;
+  line-height: $line-height-s;
+}
