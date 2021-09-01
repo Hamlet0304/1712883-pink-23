@@ -16,17 +16,34 @@
 .app__slogan {
   font-size: $font-size-xl;
   line-height: $line-height-xl;
+  text-align: center;
 }
 
 .app__download {
   font-size: $font-size-l;
+  background-color: #1d2631;
+  background-size: cover;
 }
 
 .app__availability {
   font-size: $font-size-s;
+  text-align: center;
+  color: #ffffff;
 }
 
-.app__download__text {
+.app__download-text {
   font-size: $font-size-l;
   line-height: $line-height-s;
+  text-align: center;
+  color: #ffffff;
+}
+
+.app__download-link {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
