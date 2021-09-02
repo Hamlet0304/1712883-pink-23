@@ -5,8 +5,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  align-content: flex-start;
-  justify-content: center;
 
   @include tablet-width {
     display: flex;
@@ -33,18 +31,18 @@
     padding: 12px 21px;
     padding-bottom: 5px;
     text-transform: uppercase;
-    background-color: $black;
-    border-top: 1px solid #000000;
-    border-bottom: 1px solid #a8a8a898;
+    background-color: $black-blue;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $border-color;
 
     &:hover {
-      color: $pink;
-      background-color: #283645;
+      color: $text-color-accent;
+      background-color: $black-blue;
     }
 
     &:active {
-      color: $pink;
-      background-color: #283645;
+      color: $text-color-accent;
+      background-color: $black-blue;
       opacity: 0.3;
     }
   }
