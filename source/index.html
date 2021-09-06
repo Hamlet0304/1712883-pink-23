@@ -11,8 +11,9 @@
 
 <body>
 
-  <header class="header">
+  <header class="header ">
     <div class="header__inner inner">
+      <div class="header__top">
       <a class="header__logo" href="./index.html">
         <svg class="header__logo-svg"  width="74" height="23" viewBox="0 0 74 23" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -28,9 +29,9 @@
           d="M55.9384 1.38904C55.9228 1.21262 55.944 1.03487 56.0005 0.867114C56.0571 0.699353 56.1479 0.545245 56.267 0.414596C56.3862 0.283947 56.5311 0.179616 56.6926 0.108238C56.8541 0.0368607 57.0286 0 57.2051 0C57.3815 0 57.5561 0.0368607 57.7176 0.108238C57.8791 0.179616 58.024 0.283947 58.1431 0.414596C58.2623 0.545245 58.353 0.699353 58.4096 0.867114C58.4662 1.03487 58.4874 1.21262 58.4718 1.38904V13.6837L71.2282 0.551443C71.4899 0.279712 71.8455 0.119105 72.2216 0.10273C72.5468 0.115453 72.8548 0.252812 73.0821 0.486531C73.3094 0.72025 73.4388 1.03254 73.4436 1.35912C73.4366 1.52896 73.3961 1.69572 73.3245 1.84975C73.2529 2.00379 73.1516 2.14205 73.0264 2.25655L65.0785 10.1539L73.6523 20.6836C73.8764 20.9441 73.9998 21.2768 74 21.6209C73.9961 21.7933 73.9583 21.9633 73.8887 22.121C73.8191 22.2786 73.719 22.4209 73.5943 22.5395C73.4696 22.6582 73.3228 22.7509 73.1622 22.8123C73.0016 22.8737 72.8305 22.9026 72.6588 22.8973C72.4588 22.8891 72.2639 22.8322 72.0908 22.7314C71.9177 22.6306 71.7716 22.4891 71.6653 22.3189L63.3001 11.859L58.4718 16.7051V21.591C58.4718 21.7573 58.4391 21.922 58.3757 22.0756C58.3123 22.2293 58.2194 22.3689 58.1022 22.4865C57.9851 22.6041 57.846 22.6973 57.6929 22.761C57.5398 22.8246 57.3757 22.8574 57.21 22.8574C57.0443 22.8574 56.8803 22.8246 56.7272 22.761C56.5741 22.6973 56.435 22.6041 56.3179 22.4865C56.2007 22.3689 56.1078 22.2293 56.0443 22.0756C55.9809 21.922 55.9483 21.7573 55.9483 21.591V1.38904H55.9384Z"
           fill="white" />
         </svg>
-        <button class="header__toggle header__toggle-opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </a>
-
+        <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
 
     <nav class="header__main-nav main-nav">
       <ul class="main__nav-list">
@@ -53,12 +54,14 @@
 
   <main class="main">
     <section class="app">
-      <div class="app__inner inner">
-        <div>
+
+          <div class="app__background inner">
         <p class="app__slogan">Взгляните на жизнь иначе!</p>
-        <img class="app__image" src="https://via.placeholder.com/150x100" alt="Рука с приложением">
-        </div>
+        <img class="app__image" src="./img/hand-iphone.png" alt="Рука с приложением">
+          </div>
+
       <div class="app__download download">
+          <div class="inner">
         <p class="app__download-text">Скачать приложение</p>
         <div class="app__download-link">
         <a download href="https://www.apple.com/ua/app-store/">
@@ -95,12 +98,14 @@
         </div>
         <p class="app__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-    </div>
+      </div>
     </section>
 
     <section class="advantages">
       <div class="advantages__inner inner">
-        <p class="advantages__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+        <p class="advantages__slogan">Устали от серости мегаполиса?</p>
+        <p class="advantages__slogan">Нам есть, что вам предложить!</p>
+      <div class="advantages__ok">
         <ul class="advantages__list">
           <li>
             <h3 class="advantages__title">Поднимает настроение</h3>
@@ -115,10 +120,11 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводитеновых</p>
           </li>
         </ul>
-      <div class="advantages__picture">
-        <img src="https://via.placeholder.com/150x100">
-        <img src="https://via.placeholder.com/150x100">
-        <img src="https://via.placeholder.com/150x100">
+          <div class="advantages__picture">
+            <img class="advantages__picture-one" src="./img/iphone-screen-one.png" width="157" height="320">
+            <img class="advantages__picture-two" src="./img/iphone-screen-two.png" width="157" height="320"">
+            <img class=" advantages__picture-three" src="./img/iphone-screen-three.png" width="157" height="320">
+          </div>
       </div>
     </div>
     </section>

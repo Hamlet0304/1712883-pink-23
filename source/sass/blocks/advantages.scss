@@ -39,14 +39,74 @@
   margin: 0;
   padding: 0;
 
+  @include tablet-width {
+    margin: 0;
+    padding: 0;
+  }
+
   @include desktop-width {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
+}
+
+.advantages__picture {
+  margin: 0;
+
+  @include desktop-width {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.advantages__picture-three {
+  margin-top: 48px;
+  margin-left: 60px;
+
+  @include desktop-width {
+    margin: 0;
+  }
+
+  @include tablet-width {
+    margin: 0;
+  }
+}
+
+.advantages__picture-one {
+  display: none;
+
+  @include desktop-width {
+    display: block;
+  }
+}
+
+.advantages__picture-two {
+  display: none;
+
+  @include desktop-width {
+    display: block;
+  }
+}
+
+.advantages__ok {
+  margin: 0;
 
   @include tablet-width {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include desktop-width {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
   }
 }
