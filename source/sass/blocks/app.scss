@@ -21,14 +21,14 @@
 
 .app__download {
   font-size: $font-size-l;
-  background-color: $dark-blue;
+  background-color: $background-download;
   background-size: cover;
 }
 
 .app__availability {
   font-size: $font-size-s;
   text-align: center;
-  color: $white;
+  color: $text-color-list;
 }
 
 .app__download-text {
@@ -36,7 +36,7 @@
   line-height: $line-height-s;
   text-align: center;
   color: $text-color-list;
-  border: 5px solid #ffffff;
+  border: 5px solid $border-color;
   padding: 21px 38px 21px 38px;
   border-radius: 40px;
   cursor: pointer;

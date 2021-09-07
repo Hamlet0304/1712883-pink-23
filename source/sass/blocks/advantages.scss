@@ -53,6 +53,7 @@
 
 .advantages__picture {
   margin: 0;
+  flex-shrink: 0;
 
   @include desktop-width {
     display: flex;
