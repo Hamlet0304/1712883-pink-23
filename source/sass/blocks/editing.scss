@@ -20,3 +20,80 @@
     margin: 0;
   }
 }
+
+.editing__tools-list {
+  margin: 0;
+}
+
+.editing__tools-range {
+  margin: 0;
+  list-style: none;
+}
+
+.editing__tools-crop {
+  margin: 0;
+}
+
+.editing__tools-fill {
+  margin: 0;
+}
+
+.editing__tools-contarst {
+  margin: 0;
+}
+
+.editing__tools-form {
+  margin: 0;
+}
+
+.editing__tools-submit {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: $text-color-accent;
+  border: 5px solid $text-color-accent;
+  padding: 21px 38px 21px 38px;
+  border-radius: 40px;
+  cursor: pointer;
+  border-color: $text-color-accent;
+
+  &:hover {
+    color: $text-color-list;
+    background-color: $text-color-accent;
+  }
+
+  &:active {
+    color: $text-color-list;
+    background-color: $text-color-accent;
+    opacity: 0.3;
+  }
+}
+
+.editing__tools-reset {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: $text-color-accent;
+  border: 5px solid $text-color-accent;
+  padding: 21px 38px 21px 38px;
+  border-radius: 40px;
+  cursor: pointer;
+  border-color: $text-color-accent;
+
+  &:hover {
+    color: $text-color-list;
+    background-color: $text-color-accent;
+  }
+
+  &:active {
+    color: $text-color-list;
+    background-color: $text-color-accent;
+    opacity: 0.3;
+  }
+}
+
+.editing__button {
+  margin: 0;
+}

@@ -12,18 +12,14 @@
   padding: 0;
 
   @include tablet-width {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   @include desktop-width {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-between;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
