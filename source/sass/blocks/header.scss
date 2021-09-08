@@ -2,32 +2,105 @@
   font-size: $font-size-l;
   margin: 0;
   padding: 0;
-  background-color: $black;
-  color: #ffffff;
-
-  @include mobile-width {
-    display: flex;
-    flex-direction: column;
-  }
-
-  @include tablet-width {
-    display: flex;
-    flex-direction: column;
-  }
-
-  @include desktop-width {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+  background-color: $background-color;
+  color: $text-color-list;
+  position: relative;
 }
 
 .header__inner {
   margin: 0;
 
   @include desktop-width {
+    margin: 0;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     flex-direction: row;
-    align-items: center;
+  }
+}
+
+.header__top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__main-nav {
+  margin: 0;
+
+  @include desktop-width {
+    margin: 0;
+  }
+}
+
+.header__toggle {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+  display: block;
+  cursor: pointer;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 20px;
+    width: 36px;
+    height: 2px;
+    background-color: $text-color-list;
+    box-shadow: 0 8px 0 0 $text-color-list, 0 16px 0 0 $text-color-list;
+  }
+
+  @include desktop-width {
+    display: none;
+  }
+}
+
+.header--opened {
+  .header__main-nav {
+    position: absolute;
+    background-color: $background-color;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 66px;
+    display: block;
+  }
+
+  .header__toggle {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 40px;
+      width: 35px;
+      height: 2px;
+      background-color: $text-color-list;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.header--nojs {
+  .header__toggle {
+    display: none;
+  }
+
+  .header__main-nav {
+    display: block;
+    position: static;
   }
 }
