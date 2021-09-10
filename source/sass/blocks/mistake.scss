@@ -6,6 +6,9 @@
 .mistake__info {
   font-size: $font-size-l;
   font-weight: $font-bold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .mistake__desc {
@@ -18,4 +21,14 @@
   color: $text-color-list;
   background-color: $menu-background-color;
   line-height: $line-height-xl;
+  border: none;
+}
+
+.mistake__window {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }

@@ -18,4 +18,14 @@
   color: $text-color-list;
   background-color: $menu-background-color;
   line-height: $line-height-xl;
+  border: none;
+}
+
+.submission__completed-window {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
