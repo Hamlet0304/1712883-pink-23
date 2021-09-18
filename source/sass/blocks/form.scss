@@ -1,3 +1,62 @@
+.form {
+  margin: 0;
+
+  @include tablet-width {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @include desktop-width {
+    display: grid;
+    grid-template-areas: "fio radiobuttons" "contacts contacts" "checkboxes checkboxes" "comments comments";
+  }
+}
+
+.form__fieldset-fio {
+  grid-area: fio;
+
+  @include tablet-width {
+    margin: 0;
+  }
+}
+
+.form__fieldset-radiobuttons {
+  grid-area: radiobuttons;
+
+  @include tablet-width {
+    margin: 0;
+  }
+}
+
+.form__fieldset-contacts {
+  grid-area: contacts;
+
+  @include tablet-width {
+    margin: 0;
+    order: 1;
+  }
+}
+
+.form__fieldset-checkboxes {
+  grid-area: checkboxes;
+
+  @include tablet-width {
+    margin: 0;
+    order: 2;
+  }
+}
+
+.form__fieldset-comments {
+  grid-area: comments;
+
+  @include tablet-width {
+    margin: 0;
+    order: 3;
+  }
+}
+
 .form__title {
   font-size: $font-size-s;
   color: $pink;
@@ -34,9 +93,11 @@
 
   @include desktop-width {
     padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+.form__radiobuttons-list {
+  list-style: none;
 }

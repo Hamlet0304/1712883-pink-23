@@ -61,7 +61,11 @@
 <section class="gallery">
   <div class="card">
     <div class="card__image-container">
-      <img class="card__picture-panorama" src="./img/panorama-picture.jpg" alt="панорамный вид">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/panorama-desktop.jpg 1x , ./img/panorama-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="./img/panorama-tablet.jpg 1x , ./img/panorama-tablet@2x.jpg 2x">
+      <img class="card__picture-panorama" src="./img/panorama-mobile.jpg" srcset="./img/panorama-mobile@2x.jpg">
+      </picture>
     </div>
     <div class="card__content">
       <p class="card__name">Анна </p>
@@ -78,7 +82,11 @@
       <div class="gallery__list">
         <div class="gallery__item-card">
           <div class="card__image">
-            <img class="card__picture" src="./img/levon-picture.jpg" alt="фотография Левона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/levon-1-desktop.jpg 1x , ./img/levon-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/levon-1-tablet.jpg 1x , ./img/levon-1-tablet@2x.jpg 2x">
+              <img class="card__picture" src="./img/levon-1-mobile.jpg" srcset="./img/levon-1-mobile@2x.jpg">
+            </picture>
           </div>
           <div class="card__content">
             <p class="card__name">Левон</p>
@@ -90,7 +98,11 @@
 
         <div class="gallery__item-card">
           <div class="card__image">
-            <img class="card__picture" src="./img/anton-picture.jpg" alt="фотография Антон">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/anton-2-desktop.jpg 1x , ./img/anton-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/anton-2-tablet.jpg 1x , ./img/anton-2-tablet@2x.jpg 2x">
+              <img class="card__picture" src="./img/anton-2-mobile.jpg" srcset="./img/anton-2-mobile@2x.jpg">
+            </picture>
           </div>
           <div class="card__content">
             <p class="card__name">Антон</p>
@@ -102,7 +114,11 @@
 
         <div class="gallery__item-card">
           <div class="card__image">
-            <img class="card__picture" src="./img/boris-picture.jpg" alt="фотография Борис">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/boris-3-desktop.jpg 1x , ./img/boris-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/boris-3-tablet.jpg 1x , ./img/boris-3-tablet@2x.jpg 2x">
+              <img class="card__picture" src="./img/boris-3-mobile.jpg" srcset="./img/boris-3-mobile@2x.jpg">
+            </picture>
           </div>
           <div class="card__content">
             <p class="card__name">Борис</p>
@@ -114,7 +130,11 @@
 
         <div class="gallery__item-card">
           <div class="card__image">
-            <img class="card__picture" src="./img/sergei-picture.jpg" alt="фотография Сергей">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/sergei-4-desktop.jpg 1x , ./img/sergei-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/sergei-4-tablet.jpg 1x , ./img/sergei-4-tablet@2x.jpg 2x">
+              <img class="card__picture" src="./img/sergei-4-mobile.jpg" srcset="./img/sergei-4-mobile@2x.jpg">
+            </picture>
           </div>
           <div class="card__content">
             <p class="card__name">Сергей</p>
@@ -126,7 +146,11 @@
 
         <div class="gallery__item-card">
           <div class="card__image">
-            <img class="card__picture" src="./img/maxim-picture.jpg" alt="фотография Максим">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/maxim-5-desktop.jpg 1x , ./img/maxim-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/maxim-5-tablet.jpg 1x , ./img/maxim-5-tablet@2x.jpg 2x">
+              <img class="card__picture" src="./img/maxim-5-mobile.jpg" srcset="./img/maxim-5-mobile@2x.jpg">
+            </picture>
           </div>
           <div class="card__content">
             <p class="card__name">Максим</p>
@@ -138,7 +162,11 @@
 
         <div class="gallery__item-card">
           <div class="card__image">
-            <img class="card__picture" src="./img/nadiya-picture.jpg" alt="фотография Надежда">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/nadiya-6-desktop.jpg 1x , ./img/nadiya-6-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/nadiya-6-tablet.jpg 1x , ./img/nadiya-6-tablet@2x.jpg 2x">
+              <img class="card__picture" src="./img/nadiya-6-mobile.jpg" srcset="./img/nadiya-6-mobile@2x.jpg">
+            </picture>
           </div>
           <div class="card__content">
             <p class="card__name">Надежда</p>
@@ -158,7 +186,11 @@
 
   <div class="editing__tools tools inner">
     <div>
-      <img class="editing__image" src="./img/editing-picture.jpg" alt="фотография редактирования">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/editing-7-desktop.jpg 1x , ./img/editing-7-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="./img/editing-7-tablet.jpg 1x , ./img/editing-7-tablet@2x.jpg 2x">
+        <img class="card__picture" src="./img/editing-7-mobile.jpg" srcset="./img/editing-7-mobile@2x.jpg">
+      </picture>
     </div>
     <form class="editing__tools-form">
       <div class="editing__tools-list">

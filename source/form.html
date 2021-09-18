@@ -62,7 +62,7 @@
   <div class="inner">
     <p class="information__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
   <form class="form">
-    <fieldset>
+    <fieldset class="form__fieldset-fio">
       <legend class="visually-hidden">Личные данные</legend>
       <p>
         <label class="form__title" for="last-name">Фамилия</label>
@@ -80,7 +80,7 @@
       </p>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="form__fieldset-checkboxes">
       <legend class="form__subtitle">Ваши безбашенные достижения в путешествии</legend>
         <ul class="form__list_achievements">
           <li class="form__achievement ">
@@ -110,7 +110,7 @@
         </ul>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="form__fieldset-contacts">
       <legend class="visually-hidden">Личные данные</legend>
         <p>
         <label class="form__title" for="last-name">Номер телефона</label>
@@ -122,9 +122,9 @@
         </p>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="form__fieldset-radiobuttons">
       <legend class="form__subtitle">С каким приложением путешествовали?</legend>
-        <ul>
+        <ul class="form__radiobuttons-list">
           <li>
             <input type="radio" id="iOS" name="app" checked>
             <label class="form__device" for="app">Pink для iOS</label>
@@ -140,7 +140,7 @@
         </ul>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="form__fieldset-comments">
       <legend class="visually-hidden">Эмоции</legend>
       <div  class="form__subtitle">
       <label for="textarea">Опишите свои эмоции</label>
